@@ -9,6 +9,9 @@ def hello_world():
 @app.route("/tools")
 def tools():
     return render_template("tools.html")
+@app.route("/certificates")
+def certificates():
+    return render_template("certificates.html")
 
 if __name__=="__main__":
     app.run(debug=True)
